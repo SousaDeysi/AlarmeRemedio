@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tc2_tcc_2015_unip.com.br.Nona_tela">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_EditarUsu"
+        android:gravity="center"
+        android:text="EDITAR"
+        android:textSize="50sp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edi_nomeUsu"
+        android:gravity="center"
+        android:hint="ESCREVA SEU NOME"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_EditarUsu"
+        android:layout_marginTop="50dp"
+        />
+    <ImageButton
+
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:id="@+id/img_user"
+        android:src="@drawable/a123"
+        android:layout_marginTop="90px"
+        android:layout_below="@+id/edi_nomeUsu"
+        android:onClick="escolher"
+
+
+        />
+    <Button
+        android:id="@+id/btn_excluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fc0808"
+        android:text= " EXCLUIR "
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/btn_ok"
+        android:textSize="50sp"
+        android:id="@+id/btn_SalvarUsu"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:background="#00a8ec"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/img_user"
+        android:onClick="comecar"
+        />
+
+</RelativeLayout>

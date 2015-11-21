@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_nomeMedicamento"
+            android:hint="ESCREVA O NOME DO REMÉDIO"
+            android:gravity="center"
+            android:textSize="20sp"
+
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dosagem1"
+            android:id="@+id/img_dosagem"
+
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade"
+            android:id="@+id/edt_qtdMedicamento"
+            android:maxLength="4"
+            android:numeric="decimal"
+            android:gravity="center"
+            android:textSize="30dp"
+
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipoMedicamento"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/periodicidade1"
+            android:id="@+id/img_periodicidade"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSIRA A HORA DA DOSAGEM"
+            android:textSize="20dp"
+            />
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePicker" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_periodo"
+            android:layout_marginTop="20dp"
+            >
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tempo_uso1"
+            android:id="@+id/img_tempoUso"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.41">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mês"
+                android:textSize="20sp"
+                android:id="@+id/ckMes"
+                android:layout_marginLeft="49dp"
+                android:layout_marginStart="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/edt_qtdtempo"
+                android:layout_toEndOf="@+id/edt_qtdtempo" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dias"
+                android:textSize="20sp"
+                android:id="@+id/ckDias"
+
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_alignTop="@+id/ckMes"
+                android:layout_toRightOf="@+id/ckMes"
+                android:layout_toEndOf="@+id/ckMes" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Quat."
+                android:numeric="integer"
+                android:maxLength="2"
+                android:id="@+id/edt_qtdtempo"
+                android:gravity="center"
+                android:textSize="30dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uso continuo"
+            android:textSize="20sp"
+            android:id="@+id/rdUsoContinuo"
+            />
+        <View
+            android:id="@+id/firstDivider"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.37">
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESEJA SER AVISADO QUANDO O SEU REMÉDIO ESTIVER ACABANDO"
+            android:textSize="20sp"
+            android:id="@+id/textView2"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVISE-ME"
+            android:textSize="20sp"
+            android:id="@+id/checkBox"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="INSIRA A QUANTIDADE TOTAL"
+            android:id="@+id/etdQtdTotal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            />t
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spformaFarma"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALVAR"
+            android:id="@+id/btnSalvarMed"
+            android:layout_marginBottom="5dp"
+            android:textSize="40sp"
+            android:layout_gravity="end"
+            android:onClick="salvaMedicamento"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXCLUIR"
+            android:id="@+id/btnExcluiMedicament"
+            android:textSize="40sp"
+            android:layout_gravity="end"
+            android:visibility="gone"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AlarmeRemedio</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela__cadastro_usuario">Tela_CadastroUsuario</string>
+    <string name="title_activity_tela_escolhe_imagem">Tela_escolheImagem</string>
+    <string name="title_activity_tela__autenticacao_usuario">Tela_AutenticacaoUsuario</string>
+    <string name="title_activity_tela_logado">Tela_logado</string>
+    <string name="title_activity_tela__cadastro_medicamentos">Tela_CadastroMedicamentos</string>
+    <string name="title_activity_tela_editar_usuario">Tela_editarUsuario</string>
+    <string name="title_activity_tela_editar_medicamento">Tela_editarMedicamento</string>
+    <string name="txt_quemEVc">QUEM É VOCÊ?</string>
+    <string name="bnt_editarUsuario">EDITAR PERFIL</string>
+    <string name="txt_nomeUsuario1">usuário</string>
+    <string name="txt_nomeUsuario2">usuário</string>
+    <string name="txt_desc4">Clique na imagem para acessar sua conta ou no sinal de "+" para adicionar um novo perfil</string>
+    <string name="lbl_msg">Clique para escolher \n uma imagem/cor de identifição</string>
+    <string name="btn_ok">COMEÇAR:</string>
+    <string name="lbl_name">ESCREVA SEU NOME</string>
+    <string name="txt_desc5">Clique na imagem para acessar sua conta</string>
+    <string name="title_activity_medicamentos">Medicamentos</string>
+    <string name="lbl_imgCor">Clique em uma imagem ou cor para ser sua identificação</string>
+    <string name="title_activity_lista_idosos">ListaIdosos</string>
+    <string name="title_activity_litar_medicamentos">LitarMedicamentos</string>
+</resources>

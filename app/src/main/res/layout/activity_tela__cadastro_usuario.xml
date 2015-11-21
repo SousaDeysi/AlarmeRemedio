@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:onClick="salvar">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#eaeaea">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_BemVindo"
+            android:background="@drawable/tcc1"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/lbl_name"
+            android:ems="30"
+            android:id="@+id/edt_nomeUsuarios"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:gravity="center"
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/btn_ImgUsuario"
+                android:src="@drawable/a123"
+                android:onClick="addImagem"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Clique na imagem para escolher uma imagem de identificação"
+                android:id="@+id/textView3"
+                android:textSize="26sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/btn_ok"
+            android:textSize="50sp"
+            android:id="@+id/btn_comecar"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:background="#00a8ec"
+            android:textColor="#ffffff"
+            android:onClick="comeca"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
